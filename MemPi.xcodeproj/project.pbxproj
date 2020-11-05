@@ -70,6 +70,9 @@
 		84A04DEB254F21D100BDF27C /* menuButtonClickSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84A04DE9254F21D100BDF27C /* menuButtonClickSound.wav */; };
 		84A04DF9254F224100BDF27C /* MPErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A04DF8254F224100BDF27C /* MPErrors.swift */; };
 		84A04DFD254F22DB00BDF27C /* GuessOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A04DFC254F22DB00BDF27C /* GuessOverView.swift */; };
+		84BE62672553CE3B00BB4B87 /* ShareLoveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE62662553CE3B00BB4B87 /* ShareLoveController.swift */; };
+		84BE626A2553CFC200BB4B87 /* ShareLoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE62692553CFC200BB4B87 /* ShareLoveView.swift */; };
+		84BE626D2553D08E00BB4B87 /* LoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE626C2553D08E00BB4B87 /* LoveButton.swift */; };
 		DAC8BB442F3571E907BF5F55 /* Pods_MemPi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FF82F00043B3209BA34C4A /* Pods_MemPi.framework */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +144,9 @@
 		84A04DF6254F221100BDF27C /* SF-Pro-Rounded-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Heavy.otf"; sourceTree = "<group>"; };
 		84A04DF8254F224100BDF27C /* MPErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPErrors.swift; sourceTree = "<group>"; };
 		84A04DFC254F22DB00BDF27C /* GuessOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessOverView.swift; sourceTree = "<group>"; };
+		84BE62662553CE3B00BB4B87 /* ShareLoveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLoveController.swift; sourceTree = "<group>"; };
+		84BE62692553CFC200BB4B87 /* ShareLoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLoveView.swift; sourceTree = "<group>"; };
+		84BE626C2553D08E00BB4B87 /* LoveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveButton.swift; sourceTree = "<group>"; };
 		A0643665FD8207C9B5131B70 /* Pods-MemPi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemPi.debug.xcconfig"; path = "Target Support Files/Pods-MemPi/Pods-MemPi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,6 +267,7 @@
 				84A04D76254F1CC800BDF27C /* Challange */,
 				84A04D88254F1D5200BDF27C /* MenuController.swift */,
 				84A04D8B254F1D5F00BDF27C /* AllDigitsController.swift */,
+				84BE62662553CE3B00BB4B87 /* ShareLoveController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -306,6 +313,7 @@
 				84A04DA6254F1EA600BDF27C /* ShareIcon.swift */,
 				84A04DA9254F1EB200BDF27C /* PlainShowStatsView.swift */,
 				84A04DAC254F1EBD00BDF27C /* NumberPadView.swift */,
+				84BE626C2553D08E00BB4B87 /* LoveButton.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -317,6 +325,7 @@
 				84A04DB1254F1FBC00BDF27C /* Challange */,
 				84A04DBF254F204D00BDF27C /* MenuView.swift */,
 				84A04DC2254F205A00BDF27C /* AllDigitsView.swift */,
+				84BE62692553CFC200BB4B87 /* ShareLoveView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -540,6 +549,7 @@
 				84A04DBD254F203800BDF27C /* TrainingView.swift in Sources */,
 				84A04DCE254F20BE00BDF27C /* ImageConstant.swift in Sources */,
 				84A04DC0254F204D00BDF27C /* MenuView.swift in Sources */,
+				84BE626D2553D08E00BB4B87 /* LoveButton.swift in Sources */,
 				84A04D8C254F1D5F00BDF27C /* AllDigitsController.swift in Sources */,
 				84A04D89254F1D5200BDF27C /* MenuController.swift in Sources */,
 				84A04D66254F1C4C00BDF27C /* UserDefaultsService.swift in Sources */,
@@ -560,6 +570,7 @@
 				84A04DD7254F20D900BDF27C /* SoundConstant.swift in Sources */,
 				84A04DFD254F22DB00BDF27C /* GuessOverView.swift in Sources */,
 				84A04D82254F1D2700BDF27C /* TrainingStartController.swift in Sources */,
+				84BE62672553CE3B00BB4B87 /* ShareLoveController.swift in Sources */,
 				84A04DE1254F215000BDF27C /* Ext+UIColor.swift in Sources */,
 				84A04DE4254F215D00BDF27C /* Ext+UIViewController.swift in Sources */,
 				84A04D7B254F1CE700BDF27C /* ChallangeOverController.swift in Sources */,
@@ -574,6 +585,7 @@
 				84A04D73254F1C7F00BDF27C /* RewardedAdService.swift in Sources */,
 				84A04D4D254F1B7400BDF27C /* CustomViewController.swift in Sources */,
 				84A04D6A254F1C5500BDF27C /* TrainingService.swift in Sources */,
+				84BE626A2553CFC200BB4B87 /* ShareLoveView.swift in Sources */,
 				84A04D5B254F1BF400BDF27C /* WrongNumberCell.swift in Sources */,
 				84A04DF9254F224100BDF27C /* MPErrors.swift in Sources */,
 				84A04DC3254F205A00BDF27C /* AllDigitsView.swift in Sources */,

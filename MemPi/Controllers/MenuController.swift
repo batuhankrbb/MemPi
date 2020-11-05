@@ -45,30 +45,37 @@ final class MenuController: CustomViewController {
     }
     
     private func addTargets(){
-        menuView.trainingButton.addTarget(self, action: #selector(trainingClicked), for: .touchUpInside)
-        menuView.challangeButton.addTarget(self, action: #selector(challangeClicked), for: .touchUpInside)
-        menuView.digitsButton.addTarget(self, action: #selector(digitsClicked), for: .touchUpInside)
+        menuView.trainingButton.addTarget(self, action: #selector(menuButtonClicked), for: .touchUpInside)
+        menuView.challangeButton.addTarget(self, action: #selector(menuButtonClicked), for: .touchUpInside)
+        menuView.digitsButton.addTarget(self, action: #selector(menuButtonClicked), for: .touchUpInside)
+        menuView.shareLoveButton.addTarget(self, action: #selector(menuButtonClicked), for: .touchUpInside)
         menuView.soundSwitch.addTarget(self, action: #selector(soundValueChanged), for: .valueChanged)
+        
     }
     
     //MARK: - Selectors
-    @objc private func trainingClicked(){
+    @objc private func menuButtonClicked(button:MenuButton){
+        
         SoundService.shared.playSound(sound: .menuButtonClick)
-        let trainingStartController = TrainingStartController()
-        navigationController?.pushViewController(trainingStartController, animated: true)
+        
+        var controllerToGo:UIViewController!
+        
+        switch button {
+        case menuView.trainingButton:
+            controllerToGo = TrainingStartController()
+        case menuView.digitsButton:
+            controllerToGo = AllDigitsController()
+        case menuView.shareLoveButton:
+            controllerToGo = ShareLoveController()
+        case menuView.challangeButton:
+            controllerToGo = ChallangeStartController()
+        default:
+            controllerToGo = ShareLoveController()
+        }
+       
+        navigationController?.pushViewController(controllerToGo, animated: true)
     }
     
-    @objc private func challangeClicked(){
-        SoundService.shared.playSound(sound: .menuButtonClick)
-        let challangeStartController = ChallangeStartController()
-        navigationController?.pushViewController(challangeStartController, animated: true)
-    }
-    
-    @objc private func digitsClicked(){
-        SoundService.shared.playSound(sound: .menuButtonClick)
-        let allDigitsController = AllDigitsController()
-        navigationController?.pushViewController(allDigitsController, animated: true)
-    }
     
     @objc private func soundValueChanged(sender:UISwitch){
         SoundService.shared.playSound(sound: .menuButtonClick)

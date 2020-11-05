@@ -24,4 +24,6 @@ enum ct_Image{
     static let shareIcon = UIImage(named: "shareIcon")!
     static let failIcon = UIImage(named: "failIcon")!
     static let soundIcon = UIImage(named: "soundIcon")!
+    static let feedbackIcon = UIImage(named: "feedbackIcon")!
+    static let heartIcon = UIImage(named: "heartIcon")!
 }

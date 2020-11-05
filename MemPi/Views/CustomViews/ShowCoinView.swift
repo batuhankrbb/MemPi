@@ -69,7 +69,7 @@ class ShowCoinView:UIView{
         yellowView.anchor(top: topAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor,padding: .init(top: 6, left: 20, bottom: 6, right: 0))
         
         addSubview(iconImageView)
-        iconImageView.setDimension(size: .init(width: bounds.size.width / 3, height: bounds.size.width / 2.8))
+        iconImageView.setDimension(size: .init(width: bounds.size.width / 3.2, height: bounds.size.width / 3))
         iconImageView.setCenterY(anchor: centerYAnchor)
         iconImageView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor).isActive = true
         

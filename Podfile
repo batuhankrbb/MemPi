@@ -6,6 +6,7 @@ target 'MemPi' do
   use_frameworks!
 
 pod 'Google-Mobile-Ads-SDK'
+pod 'SwiftLint'
 
   # Pods for MemPi
 

@@ -1,7 +1,6 @@
 # MemPi
 MemPi is an application for memorizing pi digits in a fun way. Made with UIKit and pure Swift. I used MVC design pattern while making this application. Responsive for iPad + iPhone (even for iPhone SE).
 
-App Store: https://apps.apple.com/app/mempi-memorize-pi-digits/id1538313631
 
 ## Features
 
